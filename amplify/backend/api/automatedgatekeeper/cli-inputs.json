@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "automatedgatekeeper",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/ilv/git/automated-gatekeeper/gatekeeper/amplify/backend/api/automatedgatekeeper/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}
