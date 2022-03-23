@@ -10,6 +10,8 @@ export const createBlog = /* GraphQL */ `
     createBlog(input: $input, condition: $condition) {
       id
       name
+      description
+      image
       posts {
         items {
           id
@@ -33,6 +35,8 @@ export const updateBlog = /* GraphQL */ `
     updateBlog(input: $input, condition: $condition) {
       id
       name
+      description
+      image
       posts {
         items {
           id
@@ -56,6 +60,8 @@ export const deleteBlog = /* GraphQL */ `
     deleteBlog(input: $input, condition: $condition) {
       id
       name
+      description
+      image
       posts {
         items {
           id
@@ -82,6 +88,8 @@ export const createPost = /* GraphQL */ `
       blog {
         id
         name
+        description
+        image
         posts {
           nextToken
         }
@@ -115,6 +123,8 @@ export const updatePost = /* GraphQL */ `
       blog {
         id
         name
+        description
+        image
         posts {
           nextToken
         }
@@ -148,6 +158,8 @@ export const deletePost = /* GraphQL */ `
       blog {
         id
         name
+        description
+        image
         posts {
           nextToken
         }
@@ -183,6 +195,8 @@ export const createComment = /* GraphQL */ `
         blog {
           id
           name
+          description
+          image
           createdAt
           updatedAt
         }
@@ -213,6 +227,8 @@ export const updateComment = /* GraphQL */ `
         blog {
           id
           name
+          description
+          image
           createdAt
           updatedAt
         }
@@ -243,6 +259,8 @@ export const deleteComment = /* GraphQL */ `
         blog {
           id
           name
+          description
+          image
           createdAt
           updatedAt
         }
