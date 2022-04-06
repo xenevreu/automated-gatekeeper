@@ -22,5 +22,21 @@ export type AmplifyDependentResourcesAttributes = {
             "BucketName": "string",
             "Region": "string"
         }
+    },
+    "function": {
+        "RekognitionIndexFacesTriggerc5dc3534": {
+            "Name": "string",
+            "Arn": "string",
+            "Region": "string",
+            "LambdaExecutionRole": "string"
+        }
+    },
+    "predictions": {
+        "identifypeople": {
+            "region": "string",
+            "collectionId": "string",
+            "celebrityDetectionEnabled": "string",
+            "maxEntities": "string"
+        }
     }
 }

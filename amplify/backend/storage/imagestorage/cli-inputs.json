@@ -10,5 +10,25 @@
     "DELETE"
   ],
   "triggerFunction": "NONE",
-  "groupAccess": {}
+  "groupAccess": {},
+  "adminTriggerFunction": {
+    "tag": "adminTriggerFunction",
+    "category": "predictions",
+    "permissions": [
+      "CREATE_AND_UPDATE",
+      "READ",
+      "DELETE"
+    ],
+    "triggerFunction": "RekognitionIndexFacesTriggerc5dc3534",
+    "triggerEvents": [
+      "s3:ObjectCreated:*",
+      "s3:ObjectRemoved:*"
+    ],
+    "triggerPrefix": [
+      {
+        "prefix": "protected/predictions/index-faces/",
+        "prefixTransform": "NONE"
+      }
+    ]
+  }
 }

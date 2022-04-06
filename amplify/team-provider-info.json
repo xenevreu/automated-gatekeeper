@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "automatedgatekeepere0cc3ae4": {}
+      },
+      "function": {
+        "RekognitionIndexFacesTriggerc5dc3534": {
+          "deploymentBucketName": "amplify-amplifyee2487c929be4-staging-15517-deployment",
+          "s3Key": "amplify-builds/RekognitionIndexFacesTriggerc5dc3534-4e4c456632456d4f3272-build.zip"
+        }
       }
     }
   }
